@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package order;
 
-option go_package = "github.com/IKakx/pharmacy-proto-gen/order";
+option go_package = "github.com/IK-akx/pharmacy-proto-gen/order";
 
 import "google/protobuf/timestamp.proto";
 

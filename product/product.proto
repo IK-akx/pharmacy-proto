@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package product;
 
-option go_package = "github.com/IKakx/pharmacy-proto-gen/product";
+option go_package = "github.com/IK-akx/pharmacy-proto-gen/product";
 
 service ProductService {
   rpc CheckAvailability(CheckAvailabilityRequest) returns (AvailabilityResponse);
