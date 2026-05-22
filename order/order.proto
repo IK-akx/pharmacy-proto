@@ -13,6 +13,7 @@ service OrderService {
   rpc GetUserOrders(GetUserOrdersRequest) returns (ListOrdersResponse);
   rpc CancelOrder(CancelOrderRequest) returns (OrderResponse);
   rpc GetUserBalance(GetBalanceRequest) returns (BalanceResponse);
+  rpc InitBalance(InitBalanceRequest) returns (InitBalanceResponse);
 }
 
 // Messages
@@ -73,4 +74,12 @@ message BalanceResponse {
   string user_id = 1;
   double balance = 2;
   google.protobuf.Timestamp updated_at = 3;
+}
+
+message InitBalanceRequest {
+  string user_id = 1;
+}
+
+message InitBalanceResponse {
+  bool success = 1;
 }
